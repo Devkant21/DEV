@@ -84,7 +84,9 @@ const Projects = () => {
           <Project title="Project 2" />
 
           {/* ROW 2 */}
-          <Project title="Project 3" />
+          <Project title="Project 3" 
+            
+          />
           <Project title="Project 4" />
           <Project title="Project 5" />
 
