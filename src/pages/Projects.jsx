@@ -1,5 +1,7 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
+import astrovedic from "../assets/astrovedic.png"
+import conkriti from "../assets/conkriti.png"
 
 const container = {
   hidden: {},
@@ -74,12 +76,68 @@ const Projects = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-          <div
-            className="flex justify-center text-center items-center p-10 bg-GRET
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            FRONTEND PROJECTS
+          <div className="grid grid-cols-3 lg:gap-3 justify-items-center">
+            <div className="py-10">
+              <div className="rounded overflow-hidden shadow-lg">
+                <img 
+                  src={astrovedic}
+                  alt="astrovedic"
+                  className="w-full"
+                />
+                <div className="px-6 py-4">
+                  <div className="font-bold text-xl mb-2">
+                    Astrovedic
+                  </div>
+                  <p>Astrovedic website</p>
+                </div>
+                <div className="grid grid-flow-col gap-5 pb-2 px-6">
+                  <span className="bg-white rounded-full px-3 py-1 text-sm font-base mb-2 ">#next</span>
+                  <span className="bg-white rounded-full px-3 py-1 text-sm font-base mb-2 ">#tailwindcss</span>
+                  <span className="bg-white rounded-full px-3 py-1 text-sm font-base mb-2 ">#framer-motion</span>
+                </div>
+              </div>
+            </div>
           </div>
+          <div className="py-10">
+              <div className="rounded overflow-hidden shadow-lg">
+                <img 
+                  src={conkriti}
+                  alt="astrovedic"
+                  className="w-full"
+                />
+                <div className="px-6 py-4">
+                  <div className="font-bold text-xl mb-2">
+                    Conkriti Architects
+                  </div>
+                  <p>Conkriti Architects landing page</p>
+                </div>
+                <div className="grid grid-flow-col gap-5 pb-2 px-6">
+                  <span className="bg-white rounded-full px-3 py-1 text-sm font-base mb-2 ">#next</span>
+                  <span className="bg-white rounded-full px-3 py-1 text-sm font-base mb-2 ">#typescript</span>
+                  <span className="bg-white rounded-full px-3 py-1 text-sm font-base mb-2 ">#tailwindcss</span>
+                  <span className="bg-white rounded-full px-3 py-1 text-sm font-base mb-2 ">#framer-motion</span>
+                </div>
+              </div>
+              <div className="py-10">
+              <div className="rounded overflow-hidden shadow-lg">
+                <img 
+                  src={astrovedic}
+                  alt="astrovedic"
+                  className="w-full"
+                />
+                <div className="px-6 py-4">
+                  <div className="font-bold text-xl mb-2">
+                    Astrovedic
+                  </div>
+                  <p>Astrovedic website</p>
+                </div>
+                <div className="grid grid-flow-col gap-5 pb-2 px-6">
+                  <span className="bg-white rounded-full px-3 py-1 text-sm font-base mb-2 ">#next</span>
+                  <span className="bg-white rounded-full px-3 py-1 text-sm font-base mb-2 ">#tailwindcss</span>
+                  <span className="bg-white rounded-full px-3 py-1 text-sm font-base mb-2 ">#framer-motion</span>
+                </div>
+              </div>
+              
           <Project title="Project 1" />
           <Project title="Project 2" />
 
@@ -93,12 +151,8 @@ const Projects = () => {
           {/* ROW 3 */}
           <Project title="Project 6" />
           <Project title="Project 7" />
-          {/* <div
-            className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            SMOOTH USER EXPERIENCE
-          </div> */}
+          </div>
+          </div>
         </motion.div>
       </div>
     </section>
