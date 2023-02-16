@@ -34,6 +34,14 @@ const SocialMediaIcons = () => {
       >
         <img alt="twitter-link" src="../assets/twitter.png" />
       </a>
+      <a
+        className="hover:opacity-50 transition duration-500"
+        href="https://drive.google.com/file/d/1WH4D6C4bm0ky7qznjYnyZI-uBJQPWSqr/view?usp=share_link"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img alt="resume-link" src="../assets/github.png" />
+      </a>
     </div>
   );
 };
